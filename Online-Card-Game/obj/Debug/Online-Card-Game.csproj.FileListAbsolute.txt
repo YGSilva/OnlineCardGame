@@ -1,0 +1,7 @@
+C:\repos\TESTE\Online-Card-Game\Online-Card-Game\bin\Debug\Online-Card-Game.exe.config
+C:\repos\TESTE\Online-Card-Game\Online-Card-Game\bin\Debug\Online-Card-Game.exe
+C:\repos\TESTE\Online-Card-Game\Online-Card-Game\bin\Debug\Online-Card-Game.pdb
+C:\repos\TESTE\Online-Card-Game\Online-Card-Game\obj\Debug\Online-Card-Game.csproj.AssemblyReference.cache
+C:\repos\TESTE\Online-Card-Game\Online-Card-Game\obj\Debug\Online-Card-Game.csproj.CoreCompileInputs.cache
+C:\repos\TESTE\Online-Card-Game\Online-Card-Game\obj\Debug\Online-Card-Game.exe
+C:\repos\TESTE\Online-Card-Game\Online-Card-Game\obj\Debug\Online-Card-Game.pdb
