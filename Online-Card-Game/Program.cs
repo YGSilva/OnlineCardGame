@@ -7,7 +7,6 @@ namespace Online_Card_Game
     {
         static void Main(string[] args)
         {
-
             (Queue<int> firstDeck, Queue<int> secondDeck) = generateDeck(1, 11);
 
             Console.WriteLine("PLAYER 1:");
@@ -21,6 +20,10 @@ namespace Online_Card_Game
             Console.WriteLine("\n== Post-game results ==");
             Console.WriteLine($"Player 1`s deck: {string.Join(", ", firstDeck)}");
             Console.WriteLine($"Player 2`s deck: {string.Join(", ", secondDeck)}");
+
+            var points = (firstDeck.Count == 0) ? CalculatePoints(secondDeck) : CalculatePoints(firstDeck);
+
+            Console.WriteLine($"Winner Player Points: {points} points.");
 
             Console.ReadKey();
         }
@@ -57,6 +60,19 @@ namespace Online_Card_Game
             } while (firstDeck.Count > 0 && secondDeck.Count > 0);
         }
 
+        static long CalculatePoints(Queue<int> winnerDeck)
+        {
+            (int result, int final) = (10, 0);
+
+            while (winnerDeck.Count > 0)
+            {
+                int card = winnerDeck.Dequeue();
+                card *= result;
+                result--;
+                final += card;
+            };
+            return final;
+        }
 
         static (Queue<int>, Queue<int>) generateDeck(int minCard, int maxCard)
         {
