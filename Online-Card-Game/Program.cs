@@ -67,8 +67,7 @@ namespace Online_Card_Game
             while (winnerDeck.Count > 0)
             {
                 int card = winnerDeck.Dequeue();
-                card *= result;
-                result--;
+                card *= result--;
                 final += card;
             };
             return final;
